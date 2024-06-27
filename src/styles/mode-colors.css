@@ -1,0 +1,16 @@
+.light-style {
+    --white: #ffffff;
+    --white2: #fafafa;
+    --black: #131416;
+    --boxShadow: 0px 0px 17px -3px rgba(0,0,0,1);
+    --blackOpacity: #000000a6;
+}
+
+.dark-style {
+    --white: #2b3743;
+    --white2: #202d36;
+    --black: #fdfeff;
+    --boxShadow: 0px 0px 17px -4px rgba(92,87,92,1);
+    --blackOpacity: #000000a6;
+}
+

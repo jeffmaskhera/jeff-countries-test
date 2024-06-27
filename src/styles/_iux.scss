@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 50px;
+    line-height: 100%;
+    margin: 0;
+}
+
+p, span, a {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+
+.empty-space-header {
+    height: 180px;
+}
+
+html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+body {
+    overflow-y: visible;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background: $white2;
+    margin: 0;
+}
+
+.container-input {
+    position: relative;
+    &__icon-left {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        color: $black;
+        svg {
+            height: 20px;
+        }
+    }
+}
+
+.input-style {
+    border-radius: 4px;
+    background: $white;
+    height: 50px;
+    border: unset;
+    outline: unset;
+    padding-left: 50px;
+    padding-right: 10px;
+    max-width: 400px;
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.81);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.81);
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.81);
+}
+
+.input-style::placeholder {
+    color: $black;
+    opacity: 0.6;
+}
+
+.button {
+    border-radius: 4px;
+    background: $white;
+    color: $black;
+    font-size: 14px;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.81);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.81);
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.81);
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: unset;
+    text-decoration: unset;
+    &.s {
+        height: 35px;
+        width: 110px;
+    }
+    &.m {
+        height: 45px;
+        width: 170px;
+    }
+}
+
+.w-max-content {
+    width: max-content;
+}
+
+
+.grid-row10 {
+    display: grid;
+    gap: 10px;
+}
+
+.grid-row20 {
+    display: grid;
+    gap: 20px;
+}
+
+
+
+@media (max-width: $table-xl) {
+    .input-style {
+        width: 100%;
+        max-width: unset;
+    }
+}
